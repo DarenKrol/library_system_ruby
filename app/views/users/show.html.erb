@@ -12,18 +12,18 @@
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Adres:</strong>
   <%= @user.address %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong>Telefon:</strong>
   <%= @user.phone %>
 </p>
 <br/><br>
 <%= link_to 'Back', users_path, :class => "btn btn-warning", :style => "color: #ffffff" %>
 <%else%>
 <blockquote>
-  <p class="text-danger">You are not authorized to view this page!</p>
+  <p class="text-danger">Nie masz wystarczających uprawnień do podglądu tej strony</p>
 </blockquote>
 <% end %>

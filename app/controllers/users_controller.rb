@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to @user, notice: 'Użytkownik został utworzony.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -41,7 +41,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'Profile Details Successfully Updated.' }
+        format.html { redirect_to @user, notice: 'Szczegóły profilu zostały zaktualizowane.' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
@@ -56,10 +56,10 @@ class UsersController < ApplicationController
     user_books = Book.find_by(user_id: @user.id)
       if user_books == nil
         @user.destroy
-        flash[:notice] = "User was successfully deleted."
+        flash[:notice] = "Użytkownik został usunięty."
         redirect_to users_url
       else
-        flash[:danger] = "User has books checked out! Can't delete"
+        flash[:danger] = "Użytkownik ma zarezerwowaną książkę, więc nie można go usunąć."
         redirect_to users_url
       end
   end

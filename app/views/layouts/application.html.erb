@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Library</title>
+  <title>Biblioteka</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,10 +13,10 @@
         <% if logged_in? %>
         <ul class="nav navbar-nav navbar-left">
           <div style="margin: 8px 0px 0px 0px; float: left">
-            <%= link_to "Home", home_path, class: "btn btn-primary", style: 'color: #fff'%>
+            <%= link_to "Strona główna", home_path, class: "btn btn-primary", style: 'color: #fff'%>
           </div>
           <div style="margin: 15px 0px 0px 20px; float: left">
-            <li style="color: #ffffff; font-size: 14px"> Welcome, <%=@current_user.name %>! </li>
+            <li style="color: #ffffff; font-size: 14px"> Witaj, <%=@current_user.name %>! </li>
           </div>
         </ul>
         <ul class="nav navbar-nav navbar-right">

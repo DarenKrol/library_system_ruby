@@ -1,125 +1,128 @@
-The heroku link for accessing the "LibSys" web application: 
-https://calm-coast-3120.herokuapp.com/login
+Link Heroku dla strony aplikacji Biblioteka:
+https://libraryprojektzespolowywsinf.herokuapp.com/
 
-To login for the first time, use credentials:
-username: admin@admin.org
-password: admin123
+Aby zalogować się po raz pierwszy, użyj nstępujących poświadczeń:
+Nazwa użytkownika: admin@admin.org
+Hasło: admin123
 
-*Important Note* - 
-1. EMAIL FUNCTIONALITY IS IMPLEMENTED - To receive emails in case of book request, create new account with valid email address
-                                        You can request notification for a checked out book
-                                        When book is returned by user, email will be sent to the user who has requested notification
-                                        Notification can be cancelled any time
-                                        Right now, only one user can request notification for a book at a time
-2. EDIT AND VIEW PROFILE - can be done by clicking on small arrow on right hand side upper corner of page.
-3. CHECKOUT HISTORY - This is available for individual users on home page ("View Checkout History") or for all users for admin (Go to Manage USers and then View Checkout History) and also for a book (Go to All books/ search book), then click on Checkout History for a particular Book.
+*Ważne uwagi* - 
+1. WYSYŁANIE EMAILI JEST ZAIMPLEMENTOWANE - Aby otrzymywać emaile w przypadku żądania książki, utwórz nowe konto z poprawnym adresem e-mail.
+                                         Możesz poprosić o powiadomienie o dostępnej książce.
+                                         Gdy książka zostanie zwrócona przez użytkownika, wiadomość e-mail zostanie wysłana do użytkownika, który poprosił o powiadomienia.
+                                         Powiadomienie można anulować w dowolnym momencie.
+                                         W tej chwili tylko jeden użytkownik może poprosić o powiadomienie o książce na raz.
 
-4. User who has books checked out is not allowed to be deleted by admin.
-5. Book who is checked out by a user is not allowed to be deleted by admin.
 
-For Editing other users' profile, Admin can go to Manage Users and then can do the required functions.
+2. EDYTUJ I ZOBACZ PROFIL - można to zrobić, klikając małą strzałkę w prawym górnym rogu strony.
+
+
+3. HISTORIA REZERWACJI - jest dostępna dla poszczególnych użytkowników na stronie głównej („Wyświetl historię rezerwacji) lub dla wszystkich użytkowników tylko dla administratorów (przejdź do Zarządzanie użytkownikami, a następnie Wyświetl historię rezerwacji), a także dla książki (Przejdź do Wszystkie książki / książka wyszukiwanie), a następnie kliknij Historia rezerwacji dla konkretnej książki.
+
+4. Użytkownik, który nie oddał książki, nie może zostać usunięty przez administratora.
+
+5. Książka, która nie została oddana przez użytkownika, nie może zostać usunięta przez administratora.
+
+W celu edycji profilu innych użytkowników, Administrator może przejść do Zarządzanie użytkownikami, a następnie może wykonać wymagane funkcje.
 
 ==================================================================================================================
-Admin functions:
+Funkcje administracyjne:
 
-Below are the steps you can execute "TO MANAGE PROFILES" when you are logged in as admin :-
+Poniżej znajdują się kroki, które możesz wykonać „Zarządzanie PROFILAMI”, gdy jesteś zalogowany jako administrator:
 
-* View Profile
-	- Drop down button on right corner >> "View Profile"
+* Zobacz profil
+	- Rozwijany przycisk w prawym rogu >> „Wyświetl profil”
 	
-* Edit Profile
-	- Drop down button on right corner >> "Edit Profile"
+* Edytuj profil
+	- Rozwijany przycisk w prawym rogu >> „Edytuj profil”
 
-* View Users list
-	- Go to "Manage Users" tab
-	
-* Add User
-	- Go to "Manage Users" tab
-	- Click "Add New User" >> Select if admin or library member
-	
-* View User Profiles
-	- Go to "Manage Users" tab
-	- Click "Show" for the user who's profile you want to view
-	
-* Edit User Profiles
-	- Go to "Manage Users" tab
-	- Click "Edit" for the user who's profile you want to edit
-	
-* Delete User Profile
-	- Go to "Manage Users" tab
-	- Click "Destroy" for the user who's profile you want to delete
+* Wyświetl listę użytkowników
+	- Przejdź do zakładki „Zarządzanie użytkownikami”
 
-* View Checkout History of a User
-       - Go to Manage Users
-       - Click on Checkout History in front of user name
-	
-Note: The view, edit and delete steps applies for viewwing/updating both admins and Library members.	
+* Dodaj użytkownika
+	- Przejdź do zakładki „Zarządzanie użytkownikami”
+	- Kliknij „Dodaj nowego użytkownika” >> Wybierz, czy administrator lub członek biblioteki
+
+* Zobacz profile użytkowników
+	- Przejdź do zakładki „Zarządzanie użytkownikami”
+	- Kliknij „Pokaż” dla użytkownika, którego profil chcesz wyświetlić
+
+* Edytuj profile użytkowników
+	- Przejdź do zakładki „Zarządzanie użytkownikami”
+	- Kliknij „Edytuj” dla użytkownika, którego profil chcesz edytować
+
+* Usuń profil użytkownika
+	- Przejdź do zakładki „Zarządzanie użytkownikami”
+	- Kliknij „Zniszcz” dla użytkownika, którego profil chcesz usunąć
+
+* Zobacz historię rezerwacji użytkownika
+   - Idź do Zarządzaj użytkownikami
+   - Kliknij Historia rezerwacji przed nazwą użytkownika
+
+Uwaga: kroki przeglądania, edycji i usuwania dotyczą przeglądania / aktualizacji zarówno administratorów, jak i członków biblioteki.
 _________________________________________________________________________________________________________________
 
-Below are the steps you can execute "TO MANAGE BOOKS" when you are logged in as admin :-
+Poniżej znajdują się kroki, które możesz wykonać „Zarządzanie KSIĄŻKAMI”, gdy jesteś zalogowany jako administrator:
 
-* Add Book
-	- Go to "Manage Books" tab
-	- Click "Add Book"
-	
-* View Books list
-	- Go to "Manage Books" tab
-		OR
-	- Go to "All Books" tab
-	
-* View Book details
-	- Go to "Manage Books" tab
-	- Click "Show" for the book who's details you want to view
-	
-*  Edit Book details
-	- Go to "Manage Books" tab
-	- Click "Edit" for the book who's details you want to edit
-	  Note: ISBN cannot be edited
+* Dodaj książkę
+	- Przejdź do zakładki „Zarządzanie książkami”
+	- Kliknij „Dodaj książkę”
 
-*  Delete Book
-	- Go to "Manage Books" tab
-	- Click "Discard" for the book who's details you want to delete
-	
-==================================================================================================================
-Library Member functions:
+* Wyświetl listę książek
+	- Przejdź do zakładki „Zarządzanie książkami”
+LUB
+	- Przejdź do karty „Wszystkie książki”
 
-Below are the steps you can execute when you are logged in as a library member :-
-	
-* Edit Profile
-	- Drop down button on right corner >> "Edit Profile"
-	
-* Search books
-	- Go to "Search Books" tab
-	- Enter the book details of one or more fields to search for a particular book.
-	
-* View self checkout history
-	- Go to "My checkout history"
-	
-* Checkout book
-	- Go to "Search books"
-	- Search for the book you want to checkout
-	- If "Status" = Available, click "Borrow"
-	
-* Request book
-	- Go to "Search books"
-	- Search for the book you want to request
-	- If "Status" = Checked out, click "Request"
-        - When book is returned by the borrower, email will be sent to member
+* Wyświetl szczegóły książki
+	- Przejdź do zakładki „Zarządzanie książkami”
+	- Kliknij „Pokaż” dla książki, której dane chcesz wyświetlić
 
-* Return book
-	- Go to "My Books" tab
-	- Click "Return" button for the book yo want to return
+* Edytuj szczegóły książki
+	- Przejdź do zakładki „Zarządzanie książkami”
+	- Kliknij „Edytuj” dla książki, której dane chcesz edytować
+Uwaga: Nie można edytować numeru ISBN
 
-*Cancel Book Request
-        - If library member has requested a book, he can cancel request any time,
-          in the same way as he has requested the book
-        - In this case, Request button will be replaced by Cancel Request.
-==================================================================================================================
-	
+* Usuń książkę
+	- Przejdź do zakładki „Zarządzanie książkami”
+	- Kliknij Usuń dla książki, której dane chcesz usunąć
 
-* Some scenarios
+================================================== ================================================== ==============
+Funkcje członka biblioteki:
 
-        - If book is deleted, then it will not be accessible for checkout, but checkout history of user
-           who had checked out that book previously will not be affected.
+Poniżej przedstawiono kroki, które możesz wykonać po zalogowaniu się jako członek biblioteki: -
 
+* Edytuj profil
+	- Rozwijany przycisk w prawym rogu >> „Edytuj profil”
+
+* Szukaj książek
+	- Przejdź do karty „Wyszukaj książki”
+	- Wprowadź szczegóły książki jednego lub więcej pól, aby wyszukać określoną książkę.
+
+* Zobacz historię samodzielnego kasowania
+	- Przejdź do „Moja historia realizacji rezerwacji”
+
+* Książka do kasy
+	- Przejdź do „Wyszukaj książki”
+	- Wyszukaj książkę, którą chcesz pobrać
+	- Jeśli „Status” = dostępny, kliknij „Wypożycz”
+
+* Zamów książkę
+	- Przejdź do „Wyszukaj książki”
+	- Wyszukaj książkę, o którą chcesz poprosić
+	- Jeśli „Status” = Wyrejestrowany, kliknij „Żądaj”
+    - Kiedy książka zostanie zwrócona przez kredytobiorcę, wiadomość e-mail zostanie wysłana do członka
+
+* Książka zwrotu
+	- Przejdź do zakładki „Moje książki”
+	- Kliknij przycisk „Powrót”, aby wrócić do książki
+
+* Anuluj zamówienie na książkę
+    - Jeśli członek biblioteki zażądał książki, może anulować żądanie w dowolnym momencie,
+      w ten sam sposób, w jaki poprosił o książkę
+    - W takim przypadku przycisk Żądanie zostanie zastąpiony przez Anuluj żądanie.
+================================================== ================================================== ==============
+
+
+* Niektóre scenariusze
+	- Jeśli książka zostanie usunięta, nie będzie dostępna dla kasy, ale historia kasowania użytkownika
+      kto wcześniej sprawdził tę książkę, nie zostanie naruszony.
 	

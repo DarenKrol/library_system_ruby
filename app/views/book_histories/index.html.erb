@@ -3,22 +3,22 @@
 
     <%if !@data.split("&")[1].split("=")[1].nil?       #user_id is not nil%>
     <%if @data.split("&")[1].split("=")[1].to_i == @current_user.id%>
-    <h1>Your checkout history</h1>
+    <h1>Twoja historia rezerwacji</h1>
     <%else %>
-    <h1><i style='color:#428bca'><%=User.find(@data.split("&")[1].split("=")[1].to_i).name%>'s</i> checkout history</h1>
+    <h1><i style='color:#428bca'><%=User.find(@data.split("&")[1].split("=")[1].to_i).name%>'s</i> Historia rezerwacji</h1>
     <%end%>
     <%else%>
-    <h1>Check out history of <i style='color:#428bca'><%=Book.find(@data.split("&")[0].split("=")[1].to_i).title%></i></h1>
+    <h1>Historia rezerwacji <i style='color:#428bca'><%=Book.find(@data.split("&")[0].split("=")[1].to_i).title%></i></h1>
     <%end%>
 
     <table class='table'>
       <thead>
         <tr>
-          <th>Book</th>
-          <th>Check out date</th>
-          <th>Check in date</th>
+          <th>Książka</th>
+          <th>Data wpisu</th>
+          <th>Data wypisu</th>
           <%if @data.split("&")[1].split("=")[1].nil? %>
-          <th>Checked out by</th>
+          <th>Zarezerwowana przez</th>
           <%end%>
           <th colspan="3"></th>
         </tr>
@@ -62,8 +62,8 @@
         <br>
         <%else%>
         <blockquote>
-          <p class="text-danger">You are not authorized to view this page!</p>
+          <p class="text-danger">Nie masz wystarczających uprawnień do podglądu tej strony.</p>
         </blockquote>
         <% end %>
       </br>
-      <%= link_to 'Back', :back, :class => "btn btn-warning", :style => "color: #ffffff" %>
+      <%= link_to 'Powrót', :back, :class => "btn btn-warning", :style => "color: #ffffff" %>

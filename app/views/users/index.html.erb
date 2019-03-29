@@ -1,15 +1,15 @@
 <% if @current_user.is_admin? %>
 <p id="notice"><%= notice %></p>
 
-<h1>User List</h1>
+<h1>Lista użytkowników</h1>
 
 <table class="table table-hover table-responsive">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Imię</th>
       <th>Email</th>
-      <th>Address</th>
-      <th>Phone</th>
+      <th>Adres</th>
+      <th>Telefon</th>
       <th>Admin</th>
       <th colspan="3"></th>
     </tr>
@@ -40,6 +40,6 @@
 <%= link_to 'Add New User', new_user_path, class: "btn btn-primary", style: "color: #ffffff" %>
 <%else%>
 <blockquote>
-  <p class="text-danger">You are not authorized to view this page!</p>
+  <p class="text-danger">Nie masz wystarczających uprawnień do podglądu tej strony</p>
 </blockquote>
 <% end %>

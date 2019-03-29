@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to home_path
     else
-      flash.now[:danger] = "Invalid email id or password. Please try again."
+      flash.now[:danger] = "Niepoprawny email lub hasło. Spróbuj ponownie."
       render 'new'
     end
   end

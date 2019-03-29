@@ -6,11 +6,11 @@ class User < ActiveRecord::Base
             :presence => true
   validates :email,
             :presence => true,
-            :uniqueness => {:message => "Email already exists"},
-            :email_format => {:message => "Email address is not valid"}
+            :uniqueness => {:message => "Email już istnieje"},
+            :email_format => {:message => "Email jest nie prawidłowy"}
   validates :password,
             :length => {:minimum => 8 },
-            :presence => {:message => "Please enter password"},
+            :presence => {:message => "Wpisz hasło"},
             :allow_nil => true
   has_secure_password
 end

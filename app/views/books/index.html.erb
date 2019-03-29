@@ -1,16 +1,16 @@
   <p id="notice"><%= notice %></p>
 
-  <p class="lead">All Books</p>
+  <p class="lead">Wszystkie książki</p>
     <table class="table">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Author</th>
+          <th>Tytuł</th>
+          <th>Opis</th>
+          <th>Autor</th>
           <th>Isbn</th>
           <th>Status</th>
           <%if @current_user.is_admin %>
-          <th>Checked out by </th>
+          <th>Zarezerwowana przez </th>
           <%end%>
           <th colspan="3"></th>
         </tr>
@@ -23,9 +23,9 @@
           <td><%= book.author %></td>
           <td><%= book.isbn %></td>
           <% if book.is_borrowed %>
-          <td><span class="label label-danger">Checked out</span></td>
+          <td><span class="label label-danger">Zarezerwowana</span></td>
           <% else %>
-          <td><span class="label label-success">Available</span></td>
+          <td><span class="label label-success">Dostępna</span></td>
           <%end%>
           <% if book.is_borrowed && @current_user.is_admin %>
           <%@user = User.find(book.user_id)%>
@@ -33,12 +33,12 @@
           <%else%>
           <td></td>
           <%end%>
-          <td><%= link_to 'Show', book, :class => "btn btn-primary", :style => "color: #ffffff" %></td>
+          <td><%= link_to 'Pokaż', book, :class => "btn btn-primary", :style => "color: #ffffff" %></td>
           <%if @current_user.is_admin? %>
-              <td><%=link_to 'View Checkout History', check_user_history_path(:data => {:user_id => nil, :book_id => book.id}), :class => "btn btn-success", :style => "color: #ffffff"%></td>
-          <td><%= link_to 'Edit', edit_book_path(book), :class => "btn btn-warning", :style => "color: #ffffff" %></td>
+              <td><%=link_to 'Zobacz historię rezerwacji', check_user_history_path(:data => {:user_id => nil, :book_id => book.id}), :class => "btn btn-success", :style => "color: #ffffff"%></td>
+          <td><%= link_to 'Edytuj', edit_book_path(book), :class => "btn btn-warning", :style => "color: #ffffff" %></td>
           <%if !book.is_borrowed %>
-          <td><%= link_to 'Delete', book, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger", :style => "color: #ffffff" %></td>
+          <td><%= link_to 'Usuń', book, method: :delete, data: { confirm: 'Czy jesteś pewien?' }, :class => "btn btn-danger", :style => "color: #ffffff" %></td>
           <%else%><td></td>
           <%end%>
           <%end%>
@@ -46,18 +46,18 @@
 
           <% if book.user_id == @current_user.id %>
 
-          <td><%= link_to 'Return', return_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
+          <td><%= link_to 'Powrót', return_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
           <%else%>
           <% if !book.is_requested %>
-          <td><%= link_to 'Request Notification', request_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
+          <td><%= link_to 'Prośba o powiadomienie', request_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
           <%else%>
           <% if book.is_requested && (book.requested_by == @current_user.id) %>          
-          <td><%= link_to 'Cancel Notification', cancel_request_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
+          <td><%= link_to 'Anuluj powiadomienia', cancel_request_book_path(:id => book.id), :class => "btn btn-warning", :style => "color: #ffffff"%></td>
           <%end%>
           <%end%>
           <%end%>
           <%else%>
-          <td><%=link_to 'Check out', borrow_book_path(:id => book.id), :class => "btn btn-success", :style => "color: #ffffff"%></td>
+          <td><%=link_to 'Zarezerwuj', borrow_book_path(:id => book.id), :class => "btn btn-success", :style => "color: #ffffff"%></td>
           <%end%>
           <%end%>
         </tr>
@@ -67,5 +67,5 @@
     <br>
     <br><br><br><br>
     <%if @current_user.is_admin %>
-    <%= link_to 'Add Book', new_book_path, :class => "btn btn-success", :style => "color: #ffffff" %>
+    <%= link_to 'Dodaj książkę', new_book_path, :class => "btn btn-success", :style => "color: #ffffff" %>
     <% end %>

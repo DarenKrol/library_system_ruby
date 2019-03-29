@@ -4,8 +4,8 @@ class BooksController < ApplicationController
   def borrow
     @book=Book.find(params[:id])
     Rails.logger = Logger.new(STDOUT)
-    logger.debug "Book id passed is #{params[:id]}"
-    logger.debug "Book returned by search #{@book.id}"
+    logger.debug "Id książki: #{params[:id]}"
+    logger.debug "Książka zwrócona przez wyszukiwanie: #{@book.id}"
     @book.is_borrowed=true
     @book.user_id = session[:user_id]
 
@@ -31,8 +31,8 @@ class BooksController < ApplicationController
   def return
     @book=Book.find(params[:id])
     Rails.logger = Logger.new(STDOUT)
-    logger.debug "Book id passed is #{params[:id]}"
-    logger.debug "Book returned by search #{@book.id}"
+    logger.debug "Id książki: #{params[:id]}"
+    logger.debug "Książka zwrócona przez wyszukiwanie: #{@book.id}"
     invalid_return = false
     if @book.is_borrowed && (@book.user_id != @current_user.id)
       invalid_return = true
@@ -50,7 +50,7 @@ class BooksController < ApplicationController
       # redirect_to @book, notice: 'Book was successfully borrowed.'
       render :show, status: :ok, location: @book
     else
-      flash.now[:danger] = "Invalid Action!"
+      flash.now[:danger] = "Nieprawidłowa operacja!"
       render :show     #render json: @book.errors, status: :unprocessable_entity
     end
     #create check_out_history of book #vicky #add check in date
@@ -121,13 +121,13 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     Rails.logger = Logger.new(STDOUT)
-    logger.debug "params passed is #{book_params}"
+    logger.debug "Parametry zapisane jako #{book_params}"
     @book.is_deleted = false
 
     respond_to do |format|
       if @book.save
-        logger.debug "Book saved with id #{@book.id}"
-        format.html { redirect_to @book, notice: 'Book was successfully added.' }
+        logger.debug "Książka zapisana z id #{@book.id}"
+        format.html { redirect_to @book, notice: 'Książka została dodana' }
         format.json { render :show, status: :created, location: @book }
       else
         format.html { render :new }
@@ -142,7 +142,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     respond_to do |format|
       if @book.update(book_params)
-        format.html { redirect_to @book, notice: 'Book was successfully updated.' }
+        format.html { redirect_to @book, notice: 'Książka została zaktualizowana.' }
         format.json { render :show, status: :ok, location: @book }
       else
         format.html { render :edit }
@@ -159,7 +159,7 @@ class BooksController < ApplicationController
       if @book.present?
         @book.is_deleted = true
         @book.save
-        format.html { redirect_to books_url, notice: 'Book was successfully destroyed.' }
+        format.html { redirect_to books_url, notice: 'Książka została usunięta' }
         format.json { head :no_content }
       else
         format.html { render :new }

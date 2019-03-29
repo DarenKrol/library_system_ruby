@@ -29,7 +29,7 @@ class BookHistoriesController < ApplicationController
 
     respond_to do |format|
       if @book_history.save
-        format.html { redirect_to @book_history, notice: 'Book history was successfully created.' }
+        format.html { redirect_to @book_history, notice: 'Historia książki została utworzona.' }
         format.json { render :show, status: :created, location: @book_history }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class BookHistoriesController < ApplicationController
   def update
     respond_to do |format|
       if @book_history.update(book_history_params)
-        format.html { redirect_to @book_history, notice: 'Book history was successfully updated.' }
+        format.html { redirect_to @book_history, notice: 'Historia książki została zaktualizowana.' }
         format.json { render :show, status: :ok, location: @book_history }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class BookHistoriesController < ApplicationController
   def destroy
     @book_history.destroy
     respond_to do |format|
-      format.html { redirect_to book_histories_url, notice: 'Book history was successfully destroyed.' }
+      format.html { redirect_to book_histories_url, notice: 'Historia książki została usunięta.' }
       format.json { head :no_content }
     end
   end

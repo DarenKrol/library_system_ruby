@@ -1,7 +1,7 @@
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(@user.errors.count, "error") %> Użytkownik został zablokowany:</h2>
     </div>
   <% end %>
 
@@ -22,7 +22,7 @@
     <%= f.text_field :address %>
   </div>
   <div class="field">
-    <%= f.label :phone, "Phone Number" %><br>
+    <%= f.label :phone, "Numer telefonu" %><br>
     <%= f.text_field :phone %>
   </div>
   <div class="field">
@@ -30,6 +30,6 @@
     <%= f.check_box :is_admin %>
   </div>
   <div class="actions">
-    <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+    <%= f.submit 'Zaloguj', :class => 'btn btn-primary' %>
   </div>
 <% end %>
