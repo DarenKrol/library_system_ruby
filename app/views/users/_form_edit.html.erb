@@ -8,22 +8,22 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class: "form-control", placeholder: "Email" %>
+    <%= f.label :name, "Imię" %><br>
+    <%= f.text_field :name, class: "form-control", placeholder: "Imię" %>
   </div>
   <div class="form-group">
     <%= f.label :email %><br>
-    <%= f.text_field :email, class: "form-control", placeholder: "Hasło" %>
+    <%= f.text_field :email, class: "form-control", placeholder: "Email" %>
   </div>
   <div class="form-group">
-    <%= f.label :address %><br>
+    <%= f.label :address, "Adres" %><br>
     <%= f.text_field :address, class: "form-control", placeholder: "Adres" %>
   </div>
   <div class="form-group">
-    <%= f.label :phone %><br>
+    <%= f.label :phone, "Telefon" %><br>
     <%= f.text_field :phone, class: "form-control", placeholder: "Numer telefonu" %>
   </div>
   <div class="form-group">
-    <%= f.submit 'Wyślij', :class => "btn btn-success" %>
+    <%= f.submit 'Zastosuj', :class => "btn btn-success" %>
   </div>
 <% end %>

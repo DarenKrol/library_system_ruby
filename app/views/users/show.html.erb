@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Imię:</strong>
   <%= @user.name %>
 </p>
 <p>
@@ -21,7 +21,7 @@
   <%= @user.phone %>
 </p>
 <br/><br>
-<%= link_to 'Back', users_path, :class => "btn btn-warning", :style => "color: #ffffff" %>
+<%= link_to 'Powrót', users_path, :class => "btn btn-warning", :style => "color: #ffffff" %>
 <%else%>
 <blockquote>
   <p class="text-danger">Nie masz wystarczających uprawnień do podglądu tej strony</p>

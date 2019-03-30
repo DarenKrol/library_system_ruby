@@ -6,11 +6,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, "Imię" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :password %><br>
+    <%= f.label :password, "Hasło" %><br>
     <%= f.password_field :password %>
   </div>
   <div class=" input-group">
@@ -18,7 +18,7 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
+    <%= f.label :address, "Adres" %><br>
     <%= f.text_field :address %>
   </div>
   <div class="field">
@@ -26,10 +26,10 @@
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :is_admin, "Admin?" %><br>
+    <%= f.label :is_admin, "Administrator?" %><br>
     <%= f.check_box :is_admin %>
   </div>
   <div class="actions">
-    <%= f.submit 'Zaloguj', :class => 'btn btn-primary' %>
+    <%= f.submit 'Dodaj', :class => 'btn btn-primary' %>
   </div>
 <% end %>

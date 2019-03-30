@@ -10,7 +10,7 @@
       <th>Email</th>
       <th>Adres</th>
       <th>Telefon</th>
-      <th>Admin</th>
+      <th>Administrator</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,11 +23,11 @@
         <td><%= user.address %></td>
         <td><%= user.phone %></td>
         <td><%= user.is_admin %></td>
-        <td><%= link_to 'Show', user, class: "btn btn-success", :style => "color: #ffffff"%></td>
-        <td><%= link_to 'Edit', edit_user_path(user), class: "btn btn-warning" , :style => "color: #ffffff"%></td>
-        <td><%=link_to 'View Checkout History', check_user_history_path(:data => {:user_id => user.id, :book_id => nil}), :class => "btn btn-success", :style => "color: #ffffff"%></td>
+        <td><%= link_to 'Pokaż', user, class: "btn btn-success", :style => "color: #ffffff"%></td>
+        <td><%= link_to 'Edytuj', edit_user_path(user), class: "btn btn-warning" , :style => "color: #ffffff"%></td>
+        <td><%=link_to 'Pokaż historię rezerwacji', check_user_history_path(:data => {:user_id => user.id, :book_id => nil}), :class => "btn btn-success", :style => "color: #ffffff"%></td>
         <%if user.id != @current_user.id && !user.super_admin %>
-        <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" , :style => "color: #ffffff"%></td>
+        <td><%= link_to 'Usuń', user, method: :delete, data: { confirm: 'Czy jesteś pewien?' }, class: "btn btn-danger" , :style => "color: #ffffff"%></td>
 
         <% end %>
       </tr>
@@ -37,7 +37,7 @@
 <%= will_paginate @users%>
 <br>
 
-<%= link_to 'Add New User', new_user_path, class: "btn btn-primary", style: "color: #ffffff" %>
+<%= link_to 'Dodaj nowego użytkownika', new_user_path, class: "btn btn-primary", style: "color: #ffffff" %>
 <%else%>
 <blockquote>
   <p class="text-danger">Nie masz wystarczających uprawnień do podglądu tej strony</p>
