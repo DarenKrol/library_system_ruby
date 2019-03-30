@@ -25,8 +25,8 @@
               <b class="caret" style="border-top:9px solid #ffffff"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "View Profile", user_path(@current_user.id) %></li>
-              <li><%= link_to "Edit Profile", edit_user_path(@current_user.id) %></li>
+              <li><%= link_to "Pokaż profil", user_path(@current_user.id) %></li>
+              <li><%= link_to "Edytuj profil", edit_user_path(@current_user.id) %></li>
               <li class="divider"></li>
               <li><%= link_to '<i class="glyphicon glyphicon-off"></i> Wyloguj'.html_safe, logout_path, method: :delete, :style => "float: left" %></li>
             </ul>
