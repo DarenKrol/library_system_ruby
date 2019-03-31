@@ -1,4 +1,4 @@
-Link Heroku dla strony aplikacji Biblioteka:
+Link platformy Heroku dla strony aplikacji Biblioteka:
 https://libraryprojektzespolowywsinf.herokuapp.com/
 
 Aby zalogować się po raz pierwszy, użyj nstępujących poświadczeń:
@@ -6,28 +6,24 @@ Nazwa użytkownika: admin@admin.org
 Hasło: admin123
 
 *Ważne uwagi* - 
-1. WYSYŁANIE EMAILI JEST ZAIMPLEMENTOWANE - Aby otrzymywać emaile w przypadku żądania książki, utwórz nowe konto z poprawnym adresem e-mail.
-                                         Możesz poprosić o powiadomienie o dostępnej książce.
-                                         Gdy książka zostanie zwrócona przez użytkownika, wiadomość e-mail zostanie wysłana do użytkownika, który poprosił o powiadomienia.
-                                         Powiadomienie można anulować w dowolnym momencie.
-                                         W tej chwili tylko jeden użytkownik może poprosić o powiadomienie o książce na raz.
+1. WYSYŁANIE EMAILI JEST ZAIMPLEMENTOWANE - W przypadku kiedy dana książka w obecnym momencie jest wypożyczona, można wyrazić chęć otrzymania e-maila, w przypadku kiedy książka się pojawi. W tym celu należy utworzć nowe konto z poprawnym adresem e-mail. Gdy książka zostanie zwrócona przez użytkownika, który wypożyczył wcześniej książkę, wiadomość e-mail zostanie wysłana do użytkownika, który poprosił o powiadomienia. Powiadomienie można anulować w dowolnym momencie. W tej chwili użytkownik może poprosić o tylko jedno powiadomienie wyłącznie na jedną książkę.
 
 
 2. EDYTUJ I ZOBACZ PROFIL - można to zrobić, klikając małą strzałkę w prawym górnym rogu strony.
 
 
-3. HISTORIA REZERWACJI - jest dostępna dla poszczególnych użytkowników na stronie głównej („Wyświetl historię rezerwacji) lub dla wszystkich użytkowników tylko dla administratorów (przejdź do Zarządzanie użytkownikami, a następnie Wyświetl historię rezerwacji), a także dla książki (Przejdź do Wszystkie książki / książka wyszukiwanie), a następnie kliknij Historia rezerwacji dla konkretnej książki.
+3. HISTORIA REZERWACJI - jest dostępna dla użytkowników na stronie głównej („Wyświetl historię rezerwacji). Administratorzy z kolei mogą podglądać historię wszystkich użytkowników (przejdź do Zarządzanie użytkownikami, a następnie Wyświetl historię rezerwacji), a także dla książki (Przejdź do Wszystkie książki / książka wyszukiwanie), a następnie kliknij Historia rezerwacji dla konkretnej książki.
 
 4. Użytkownik, który nie oddał książki, nie może zostać usunięty przez administratora.
 
 5. Książka, która nie została oddana przez użytkownika, nie może zostać usunięta przez administratora.
 
-W celu edycji profilu innych użytkowników, Administrator może przejść do Zarządzanie użytkownikami, a następnie może wykonać wymagane funkcje.
+W celu edycji profilu innych użytkowników, Administrator może przejść do Zarządzanie użytkownikami, a następnie wykonać akcje.
 
 ==================================================================================================================
 Funkcje administracyjne:
 
-Poniżej znajdują się kroki, które możesz wykonać „Zarządzanie PROFILAMI”, gdy jesteś zalogowany jako administrator:
+Poniżej znajdują się kroki, które możesz wykonać w menu „Zarządzanie profilami, gdy jesteś zalogowany jako administrator:
 
 * Zobacz profil
 	- Rozwijany przycisk w prawym rogu >> „Wyświetl profil”
@@ -61,7 +57,7 @@ Poniżej znajdują się kroki, które możesz wykonać „Zarządzanie PROFILAMI
 Uwaga: kroki przeglądania, edycji i usuwania dotyczą przeglądania / aktualizacji zarówno administratorów, jak i członków biblioteki.
 _________________________________________________________________________________________________________________
 
-Poniżej znajdują się kroki, które możesz wykonać „Zarządzanie KSIĄŻKAMI”, gdy jesteś zalogowany jako administrator:
+Poniżej znajdują się kroki, które możesz wykonać w menu „Zarządzanie książkami, gdy jesteś zalogowany jako administrator:
 
 * Dodaj książkę
 	- Przejdź do zakładki „Zarządzanie książkami”
@@ -74,16 +70,16 @@ LUB
 
 * Wyświetl szczegóły książki
 	- Przejdź do zakładki „Zarządzanie książkami”
-	- Kliknij „Pokaż” dla książki, której dane chcesz wyświetlić
+	- Kliknij „Pokaż” przy książce, której dane chcesz wyświetlić
 
 * Edytuj szczegóły książki
 	- Przejdź do zakładki „Zarządzanie książkami”
-	- Kliknij „Edytuj” dla książki, której dane chcesz edytować
+	- Kliknij „Edytuj” przy książce, której dane chcesz edytować
 Uwaga: Nie można edytować numeru ISBN
 
 * Usuń książkę
 	- Przejdź do zakładki „Zarządzanie książkami”
-	- Kliknij Usuń dla książki, której dane chcesz usunąć
+	- Kliknij Usuń przy książce, której dane chcesz usunąć
 
 ================================================== ================================================== ==============
 Funkcje członka biblioteki:
@@ -108,8 +104,8 @@ Poniżej przedstawiono kroki, które możesz wykonać po zalogowaniu się jako c
 * Zamów książkę
 	- Przejdź do „Wyszukaj książki”
 	- Wyszukaj książkę, o którą chcesz poprosić
-	- Jeśli „Status” = Wyrejestrowany, kliknij „Żądaj”
-    - Kiedy książka zostanie zwrócona przez kredytobiorcę, wiadomość e-mail zostanie wysłana do członka
+	- Jeśli „Status” = Zarezerwowana, kliknij „Prośba o powiadomienie”
+    - Kiedy książka zostanie zwrócona przez wypożyczającego, wiadomość e-mail zostanie wysłana do członka
 
 * Książka zwrotu
 	- Przejdź do zakładki „Moje książki”
@@ -118,11 +114,11 @@ Poniżej przedstawiono kroki, które możesz wykonać po zalogowaniu się jako c
 * Anuluj zamówienie na książkę
     - Jeśli członek biblioteki zażądał książki, może anulować żądanie w dowolnym momencie,
       w ten sam sposób, w jaki poprosił o książkę
-    - W takim przypadku przycisk Żądanie zostanie zastąpiony przez Anuluj żądanie.
+    - W takim przypadku przycisk Prośba o powiadomienie zostanie zastąpiony przez Anuluj powiadomienie.
 ================================================== ================================================== ==============
 
 
 * Niektóre scenariusze
-	- Jeśli książka zostanie usunięta, nie będzie dostępna dla kasy, ale historia kasowania użytkownika
-      kto wcześniej sprawdził tę książkę, nie zostanie naruszony.
+	- Jeśli książka zostanie usunięta, nie będzie dostępna dla użytkowników, ale historia rezerwacji użytkownika,
+	  który wcześniej wypożyczył tę książkę, nie zostanie naruszona.
 	
