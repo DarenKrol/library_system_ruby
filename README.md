@@ -93,7 +93,7 @@ Poniżej przedstawiono kroki, które możesz wykonać po zalogowaniu się jako c
 	- Przejdź do karty „Wyszukaj książki”
 	- Wprowadź szczegóły książki jednego lub więcej pól, aby wyszukać określoną książkę.
 
-* Zobacz historię samodzielnego kasowania
+* Zobacz historię rezerwacji
 	- Przejdź do „Moja historia realizacji rezerwacji”
 
 * Wypożycz książkę
