@@ -96,22 +96,22 @@ Poniżej przedstawiono kroki, które możesz wykonać po zalogowaniu się jako c
 * Zobacz historię samodzielnego kasowania
 	- Przejdź do „Moja historia realizacji rezerwacji”
 
-* Książka do kasy
+* Wypożycz książkę
 	- Przejdź do „Wyszukaj książki”
 	- Wyszukaj książkę, którą chcesz pobrać
 	- Jeśli „Status” = dostępny, kliknij „Wypożycz”
 
-* Zamów książkę
+* Poproś o powiadomienie, kiedy książka będzie dostępna
 	- Przejdź do „Wyszukaj książki”
 	- Wyszukaj książkę, o którą chcesz poprosić
 	- Jeśli „Status” = Zarezerwowana, kliknij „Prośba o powiadomienie”
     - Kiedy książka zostanie zwrócona przez wypożyczającego, wiadomość e-mail zostanie wysłana do członka
 
-* Książka zwrotu
+* Zwróć książkę
 	- Przejdź do zakładki „Moje książki”
-	- Kliknij przycisk „Powrót”, aby wrócić do książki
+	- Kliknij przycisk „Zwrot”, aby wrócić do książki
 
-* Anuluj zamówienie na książkę
+* Anuluj powiadomienie o dostępności książki
     - Jeśli członek biblioteki zażądał książki, może anulować żądanie w dowolnym momencie,
       w ten sam sposób, w jaki poprosił o książkę
     - W takim przypadku przycisk Prośba o powiadomienie zostanie zastąpiony przez Anuluj powiadomienie.
